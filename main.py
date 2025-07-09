@@ -1,14 +1,11 @@
+
+from stats import analyse_text
+import re
 def get_book_text(path):
     with open(path, 'r', encoding='utf-8') as f:
         return f.read()
     
 
-def analyse_text(text):
-    word_count = len((text.split()))
-    print(f"{word_count} words found in the document")
-    return{
-        "word_count": word_count
-    }
 
 
 def main():
